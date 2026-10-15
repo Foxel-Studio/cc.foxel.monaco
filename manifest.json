@@ -1,0 +1,33 @@
+{
+  "foxpkg": "1.0",
+  "hostApiVersion": ">=1.0,<2.0",
+  "key": "cc.foxel.monaco",
+  "name": "monaco",
+  "version": "1.0.0",
+  "description": "用宿主的 Monaco 查看和编辑文本。",
+  "i18n": {
+    "zh": {
+      "name": "monaco",
+      "description": "用宿主的 Monaco 查看和编辑文本。"
+    },
+    "en": {
+      "name": "monaco",
+      "description": "Views and edits text with the host Monaco editor."
+    }
+  },
+  "author": "Foxel",
+  "website": "https://foxel.cc",
+  "github": "https://github.com/Foxel-Studio/cc.foxel.monaco",
+  "license": "MIT",
+  "frontend": {
+    "entry": "frontend/index.js",
+    "styles": ["frontend/player.css"],
+    "icon": "frontend/icon.svg",
+    "publicDir": "frontend",
+    "capabilities": ["monaco"],
+    "openApp": false,
+    "supportedExts": ["js", "jsx", "mjs", "cjs", "ts", "tsx", "mts", "cts", "vue", "html", "htm", "css", "scss", "sass", "less", "json", "xml", "yaml", "yml", "py", "java", "cpp", "cc", "cxx", "c", "h", "hpp", "hxx", "php", "rb", "go", "rs", "rust", "swift", "kt", "scala", "clj", "cljs", "cs", "vb", "fs", "pl", "pm", "r", "lua", "dart", "elm", "sql", "md", "markdown", "txt", "log", "ini", "cfg", "conf", "sh", "bash", "zsh", "fish", "ps1", "bat", "cmd", "dockerfile", "makefile", "gradle", "cmake", "gitignore", "gitattributes", "editorconfig", "prettierrc", "env", "config", "properties", "toml"],
+    "defaultBounds": { "width": 1000, "height": 720 },
+    "useSystemWindow": true
+  }
+}

@@ -1,0 +1,100 @@
+.foxel-monaco,
+.foxel-monaco-status {
+  height: 100%;
+  min-height: 0;
+}
+
+.foxel-monaco {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #111;
+}
+
+.foxel-monaco.is-dark {
+  background: #1e1e1e;
+  color: #ddd;
+}
+
+.foxel-monaco-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 6px 12px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 13px;
+}
+
+.foxel-monaco.is-dark .foxel-monaco-bar {
+  border-bottom-color: #333;
+}
+
+.foxel-monaco-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 650;
+}
+
+.foxel-monaco-meta,
+.foxel-monaco-error {
+  color: #666;
+  white-space: nowrap;
+}
+
+.foxel-monaco.is-dark .foxel-monaco-meta {
+  color: #aaa;
+}
+
+.foxel-monaco-error {
+  color: #a8071a;
+}
+
+.foxel-monaco-bar button {
+  border: 1px solid #d9d9d9;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.foxel-monaco-bar button:disabled {
+  background: transparent;
+  color: #999;
+  cursor: default;
+}
+
+.foxel-monaco.is-dark .foxel-monaco-bar button {
+  background: #eee;
+  color: #111;
+  border-color: #eee;
+}
+
+.foxel-monaco.is-dark .foxel-monaco-bar button:disabled {
+  background: transparent;
+  color: #777;
+  border-color: #444;
+}
+
+.foxel-monaco-editor {
+  flex: 1;
+  min-height: 0;
+}
+
+.foxel-monaco-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  color: #444;
+}
+
+.foxel-monaco-status.is-error {
+  color: #a8071a;
+}
